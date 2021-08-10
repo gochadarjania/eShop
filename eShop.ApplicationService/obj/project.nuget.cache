@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8eXGgfghfv4rJz2NLNhwyMxn39d0GK4unRzzyJkAiImls3RJ00h8Fb2HYQA8fqc94Qmn2F9VF9+lf3mxl681wQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.ApplicationService\\eShop.ApplicationService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gocha\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Gocha\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Gocha\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

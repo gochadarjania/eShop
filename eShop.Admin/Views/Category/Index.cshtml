@@ -1,0 +1,27 @@
+﻿@model eShop.Admin.Models.CategoryListModel
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Category Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Categories)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.CategoryName</td>
+              
+                @*<td>@item.UnitName </td>*@
+            </tr>
+        }
+
+
+    </tbody>
+</table>
