@@ -10,5 +10,7 @@ namespace eShop.DomainService.RepositoriInterfaces
     public interface IProductRepository
     {
         List<ProductEntity> GetProducts();
+
+        void InsertProduct(ProductEntity productEntity);
     }
 }

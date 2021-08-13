@@ -2,6 +2,7 @@
 using eShop.Admin.Models;
 using eShop.ApplicationService.ServiceInterfaces;
 using eShop.DataTransferObject;
+using eShop.Utility;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace eShop.Admin.Controllers
         {
             _productApplicationService = productApplicationService;
         }
-        
+
         [Route("Products")]
         [Authorize]
         public IActionResult Product()
@@ -43,6 +44,26 @@ namespace eShop.Admin.Controllers
             ProductListModel productListModel = new ProductListModel();
             productListModel.Products = productModelList;
             return View(productListModel);
+        }
+
+        //[HttpPost]
+        [Route("ProductInsert")]
+        [Authorize]
+        public JsonResult InsertProduct(string Name, string Price, string Quantuty, string Description, string Img)
+        {
+            ProductModel productModel = new ProductModel()
+            {
+                Name = Name,
+                Price = Convert.ToDecimal(Price),
+                Quantuty = Convert.ToDecimal(Quantuty),
+                Description = Description,
+                ProductImage = Img
+            };
+
+
+            _productApplicationService.InsertProduct(AutoMapperExtensions.MapObject<ProductModel, ProductDTO>(productModel));
+
+            return Json(productModel);
         }
     }
 }

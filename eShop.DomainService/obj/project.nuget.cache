@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SH0P4d8mA0UYxBfouFro0mcrqgu8KzRpaKY5q5aJ3l9P55qnn7LVVa+JutGEgNzQpTyu826a7cGpVLbKAlKG0A==",
+  "dgSpecHash": "b337dEUAZMHrZSJh1smGPJb4MD95rBM5iVukMGLxr4DG/psJrEibBElJqb7RGbT5ZtosqPps88iGrymhWHgJLQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainService\\eShop.DomainService.csproj",
+  "projectFilePath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainService\\eShop.DomainService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gocha\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Gocha\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -10,5 +10,6 @@ namespace eShop.DomainService.ServiceInterfaces
     public interface IProductDomainService
     {
         List<ProductEntity> GetProductEntities();
+        void InsertProduct(ProductEntity productEntity);
     }
 }

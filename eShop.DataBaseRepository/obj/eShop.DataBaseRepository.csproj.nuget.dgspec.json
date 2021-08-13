@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DataBaseRepository\\eShop.DataBaseRepository.csproj": {}
+    "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DataBaseRepository\\eShop.DataBaseRepository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DataBaseRepository\\eShop.DataBaseRepository.csproj": {
+    "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DataBaseRepository\\eShop.DataBaseRepository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DataBaseRepository\\eShop.DataBaseRepository.csproj",
+        "projectUniqueName": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DataBaseRepository\\eShop.DataBaseRepository.csproj",
         "projectName": "eShop.DataBaseRepository",
-        "projectPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DataBaseRepository\\eShop.DataBaseRepository.csproj",
+        "projectPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DataBaseRepository\\eShop.DataBaseRepository.csproj",
         "packagesPath": "C:\\Users\\Gocha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DataBaseRepository\\obj\\",
+        "outputPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DataBaseRepository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -35,11 +35,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj": {
-                "projectPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj"
+              "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj": {
+                "projectPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj"
               },
-              "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainService\\eShop.DomainService.csproj": {
-                "projectPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainService\\eShop.DomainService.csproj"
+              "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainService\\eShop.DomainService.csproj": {
+                "projectPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainService\\eShop.DomainService.csproj"
               }
             }
           }
@@ -90,14 +90,14 @@
         }
       }
     },
-    "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj": {
+    "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj",
+        "projectUniqueName": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj",
         "projectName": "eShop.DomainModel",
-        "projectPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj",
+        "projectPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj",
         "packagesPath": "C:\\Users\\Gocha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainModel\\obj\\",
+        "outputPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -151,14 +151,14 @@
         }
       }
     },
-    "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainService\\eShop.DomainService.csproj": {
+    "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainService\\eShop.DomainService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainService\\eShop.DomainService.csproj",
+        "projectUniqueName": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainService\\eShop.DomainService.csproj",
         "projectName": "eShop.DomainService",
-        "projectPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainService\\eShop.DomainService.csproj",
+        "projectPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainService\\eShop.DomainService.csproj",
         "packagesPath": "C:\\Users\\Gocha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainService\\obj\\",
+        "outputPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -182,11 +182,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj": {
-                "projectPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj"
+              "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj": {
+                "projectPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DomainModel\\eShop.DomainModel.csproj"
               },
-              "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.Utility\\eShop.Utility.csproj": {
-                "projectPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.Utility\\eShop.Utility.csproj"
+              "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.Utility\\eShop.Utility.csproj": {
+                "projectPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.Utility\\eShop.Utility.csproj"
               }
             }
           }
@@ -219,14 +219,14 @@
         }
       }
     },
-    "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.Utility\\eShop.Utility.csproj": {
+    "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.Utility\\eShop.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.Utility\\eShop.Utility.csproj",
+        "projectUniqueName": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.Utility\\eShop.Utility.csproj",
         "projectName": "eShop.Utility",
-        "projectPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.Utility\\eShop.Utility.csproj",
+        "projectPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.Utility\\eShop.Utility.csproj",
         "packagesPath": "C:\\Users\\Gocha\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.Utility\\obj\\",
+        "outputPath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -22,5 +22,10 @@ namespace eShop.DomainService.Services
         {
             return _productRepository.GetProducts();
         }
+
+        public void InsertProduct(ProductEntity productEntity)
+        {
+            _productRepository.InsertProduct(productEntity);
+        }
     }
 }

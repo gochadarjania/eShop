@@ -10,3 +10,15 @@ C:\Users\Gocha\Desktop\C# Smart Academy arkad\HomeWork\Arkadis, dawyebuli proeqt
 C:\Users\Gocha\Desktop\C# Smart Academy arkad\HomeWork\Arkadis, dawyebuli proeqti\eShop\eShop.Utility\obj\Debug\net5.0\eShop.Utility.dll
 C:\Users\Gocha\Desktop\C# Smart Academy arkad\HomeWork\Arkadis, dawyebuli proeqti\eShop\eShop.Utility\obj\Debug\net5.0\ref\eShop.Utility.dll
 C:\Users\Gocha\Desktop\C# Smart Academy arkad\HomeWork\Arkadis, dawyebuli proeqti\eShop\eShop.Utility\obj\Debug\net5.0\eShop.Utility.pdb
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\bin\Debug\net5.0\eShop.Utility.deps.json
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\bin\Debug\net5.0\eShop.Utility.dll
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\bin\Debug\net5.0\ref\eShop.Utility.dll
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\bin\Debug\net5.0\eShop.Utility.pdb
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\obj\Debug\net5.0\eShop.Utility.csproj.AssemblyReference.cache
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\obj\Debug\net5.0\eShop.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\obj\Debug\net5.0\eShop.Utility.AssemblyInfoInputs.cache
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\obj\Debug\net5.0\eShop.Utility.AssemblyInfo.cs
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\obj\Debug\net5.0\eShop.Utility.csproj.CoreCompileInputs.cache
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\obj\Debug\net5.0\eShop.Utility.dll
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\obj\Debug\net5.0\ref\eShop.Utility.dll
+C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Utility\obj\Debug\net5.0\eShop.Utility.pdb

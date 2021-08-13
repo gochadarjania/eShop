@@ -10,6 +10,7 @@ namespace eShop.ApplicationService.ServiceInterfaces
     public interface IProductApplicationService 
     {
         List<ProductDTO> GetProducts();
+        void InsertProduct(ProductDTO productEntity);
 
     }
 }

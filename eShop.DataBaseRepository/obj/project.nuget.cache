@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CCx1SWU4VVP/8NoJ3fZU3cpHkW74XDSoNXyvTUGqbKLp51IPoniatHWEevptHQwVTgSNb2+kK3WL3UiUI3re7g==",
+  "dgSpecHash": "rubOhVn8tVOpakHzThI27DDRVeObsmklClJjoPYtnXnHNIjr1B/t5OtcWw4wlI40JhPGJNXbt08IeyXscJcVpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.DataBaseRepository\\eShop.DataBaseRepository.csproj",
+  "projectFilePath": "C:\\Users\\Gocha\\source\\repos\\gochadarjania\\eShop\\eShop.DataBaseRepository\\eShop.DataBaseRepository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gocha\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Gocha\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

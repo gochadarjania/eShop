@@ -190,11 +190,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.Utility\\eShop.Utility.csproj",
+      "projectUniqueName": "C:\\Users\\Gocha\\Source\\Repos\\gochadarjania\\eShop\\eShop.Utility\\eShop.Utility.csproj",
       "projectName": "eShop.Utility",
-      "projectPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.Utility\\eShop.Utility.csproj",
+      "projectPath": "C:\\Users\\Gocha\\Source\\Repos\\gochadarjania\\eShop\\eShop.Utility\\eShop.Utility.csproj",
       "packagesPath": "C:\\Users\\Gocha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gocha\\Desktop\\C# Smart Academy arkad\\HomeWork\\Arkadis, dawyebuli proeqti\\savarjisho\\eShop\\eShop.Utility\\obj\\",
+      "outputPath": "C:\\Users\\Gocha\\Source\\Repos\\gochadarjania\\eShop\\eShop.Utility\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

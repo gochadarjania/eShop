@@ -22,23 +22,37 @@ namespace eShop.ApplicationService.Services
         public List<ProductDTO> GetProducts()
         {
             var productEntityList = _productDomainService.GetProductEntities();
+
             List<ProductDTO> productDTOList = new List<ProductDTO>();
 
             foreach (ProductEntity item in productEntityList)
             {
-                productDTOList.Add(new ProductDTO() { 
-                Id = item.Id,
-                Name = item.Name,
-                Price = item.Price,
-                ProductImage = item.ProductImage,
-                Quantuty = item.Quantuty,
-                UnitName= item.UnitName,
-                Description = item.Description,
-                DateCreated = item.DateCreated
+                productDTOList.Add(new ProductDTO()
+                {
+                    Id = item.Id,
+                    Name = item.Name,
+                    Price = item.Price,
+                    ProductImage = item.ProductImage,
+                    Quantuty = item.Quantuty,
+                    UnitName = item.UnitName,
+                    Description = item.Description,
+                    DateCreated = item.DateCreated
                 });
             }
 
-           return productDTOList;
+            return productDTOList;
+        }
+
+        public void InsertProduct(ProductDTO productEntity)
+        {
+            _productDomainService.InsertProduct(new ProductEntity()
+            {
+                Name = productEntity.Name,
+                Price = productEntity.Price,
+                Quantuty = productEntity.Quantuty,
+                Description = productEntity.Description,
+                ProductImage = productEntity.ProductImage
+            });
         }
     }
 }

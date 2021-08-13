@@ -16,21 +16,56 @@ namespace eShop.DataBaseRepository
         {
             using (eShopDbContext context = new eShopDbContext())
             {
-                var query = context.Products.Select(p => new ProductEntity
-                {
-                    Id = p.Id,
-                    Name = p.Name,
-                    Price = p.Price,
-                    UnitName = p.Unit.Name,
-                    ProductImage = p.ProductImages.FirstOrDefault(i => true).ImagePath,
-                    Quantuty = p.Quantuty,
-                    Description = p.Description,
-                    DateCreated = p.DateCreated
-                });
+                var query = from p in context.Products
+                            select new ProductEntity
+                            {
+                                Id = p.Id,
+                                Name = p.Name,
+                                Price = p.Price,
+                                UnitName = p.Unit.Name,
+                                ProductImage = p.ProductImages.FirstOrDefault(i => true).ImagePath,
+                                Quantuty = p.Quantuty,
+                                Description = p.Description,
+                                DateCreated = p.DateCreated
+                            };
+
+                //var query = context.Products.Select(p => new ProductEntity
+                //{
+                //    Id = p.Id,
+                //    Name = p.Name,
+                //    Price = p.Price,
+                //    UnitName = p.Unit.Name,
+                //    ProductImage = p.ProductImages.FirstOrDefault(i => true).ImagePath,
+                //    Quantuty = p.Quantuty,
+                //    Description = p.Description,
+                //    DateCreated = p.DateCreated
+                //});
 
 
 
                 return query.ToList();
+            }
+        }
+
+        public void InsertProduct(ProductEntity productEntity)
+        {
+            using (eShopDbContext context = new eShopDbContext())
+            {
+                List<ProductImage> productImages = new List<ProductImage>();
+                productImages.Add(new ProductImage() { ImagePath = productEntity.ProductImage});
+
+                context.Products.Add(new Product()
+                {
+                    Name = productEntity.Name,
+                    Price = productEntity.Price,
+                    Quantuty = productEntity.Quantuty,
+                    ProductImages = productImages,
+                    UnitId = 2,
+                     DateCreated = DateTime.Now,
+                    Description = productEntity.Description
+                });
+
+                context.SaveChanges();
             }
         }
 
