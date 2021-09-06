@@ -9,8 +9,9 @@ namespace eShop.ApplicationService.ServiceInterfaces
 {
     public interface IProductApplicationService 
     {
-        List<ProductDTO> GetProducts();
+        Task<List<ProductDTO>> GetProducts();
         void InsertProduct(ProductDTO productEntity);
+        void DeleteProduct(int id);
 
     }
 }

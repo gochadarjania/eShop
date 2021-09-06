@@ -282,7 +282,6 @@ C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Raz
 C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Razor\Views\Category\Index.cshtml.g.cs
 C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Razor\Views\Product\Product.cshtml.g.cs
 C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAuth.cshtml.g.cs
 C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -296,3 +295,6 @@ C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\eSh
 C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\ref\eShop.Admin.dll
 C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\eShop.Admin.pdb
 C:\Users\Gocha\Source\Repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\eShop.Admin.genruntimeconfig.cache
+C:\Users\Gocha\source\repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Razor\Views\Product\ProductPV.cshtml.g.cs
+C:\Users\Gocha\source\repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Razor\Views\Product\Product.cshtml.g.cs
+C:\Users\Gocha\source\repos\gochadarjania\eShop\eShop.Admin\obj\Debug\net5.0\Razor\Views\Product\InsertProduct.cshtml.g.cs

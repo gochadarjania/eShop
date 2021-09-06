@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\eShop.DataTransferObject\eShop.DataTransferObject.csproj" />
     <ProjectReference Include="..\eShop.DomainModel\eShop.DomainModel.csproj" />
     <ProjectReference Include="..\eShop.DomainService\eShop.DomainService.csproj" />

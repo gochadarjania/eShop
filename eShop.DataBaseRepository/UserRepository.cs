@@ -16,7 +16,7 @@ namespace eShop.DataBaseRepository
             using (eShopDbContext context = new eShopDbContext())
             {
                 var query = (from user in context.Users
-                             where user.Email == UserModel.Email && 
+                             where user.Email == UserModel.Email &&
                              user.PasswordHash == UserModel.PasswordHash &&
                              user.IsActive == true &&
                              user.DateDeleted == null
@@ -47,6 +47,20 @@ namespace eShop.DataBaseRepository
                              select user).FirstOrDefault();
 
                 return query != null;
+            }
+        }
+
+        public void LoginOut(Guid sessionID)
+        {
+            using (eShopDbContext context = new eShopDbContext())
+            {
+                var query = (from p in context.Users
+                            where p.SessionId == sessionID
+                            select p).FirstOrDefault();
+
+                query.SessionId = null;
+                context.SaveChanges();
+            
             }
         }
     }

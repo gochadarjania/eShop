@@ -11,6 +11,7 @@ namespace eShop.DataBaseRepository.DB.Models
         public int Id { get; set; }
         public int ProductId { get; set; }
         public string ImagePath { get; set; }
+        public bool IsMain { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime? DateChanged { get; set; }
         public DateTime? DateDeleted { get; set; }

@@ -1,4 +1,5 @@
-﻿using eShop.Admin.Models;
+﻿using eShop.Admin.Attributes;
+using eShop.Admin.Models;
 using eShop.ApplicationService.ServiceInterfaces;
 using eShop.DataTransferObject;
 using Microsoft.AspNetCore.Http;
@@ -28,21 +29,25 @@ namespace eShop.Admin.Controllers
 
         public IActionResult LoginOut()
         {
-                HttpContext.Session.Clear();
-                return Redirect("/");
+            Guid sessionID =  Guid.Parse(HttpContext.Session.GetString("SessionID"));
+            HttpContext.Session.Remove("SessionID");
+            HttpContext.Session.Remove("UserName");
+            _userApplicationService.LoginOut(sessionID);
+
+            return Redirect("/");
         }
 
         [Route("login")]
         [HttpPost]
         public IActionResult Login(LoginModel loginModel)
         {
-           var responseCore = _userApplicationService.Login(new LoginDTO()
+            var responseCore = _userApplicationService.Login(new LoginDTO()
             {
                 Email = loginModel.Email,
                 PasswordHash = loginModel.PasswordHash
             });
 
-            if (responseCore.Messages.Count==0)
+            if (responseCore.Messages.Count == 0)
             {
                 HttpContext.Session.SetString("SessionID", responseCore.SessionID.ToString());
                 HttpContext.Session.SetString("UserName", loginModel.Email);

@@ -1,4 +1,4 @@
-﻿@model eShop.Admin.Models.ProductListModel
+﻿@model List<eShop.Admin.Models.ProductModel>
 
 @{
     ViewData["Title"] = "Products";
@@ -37,14 +37,14 @@
             </thead>
 
             <tbody>
-                @foreach (var item in Model.Products)
+                @foreach (var item in Model)
                 {
                     <tr>
                         <td>@item.Id</td>
-                        <td ><img src="@item.ProductImage" width="100"></td>
-                        <td >@item.Name</td>
+                        <td><img src="../upload/@item.ProductImage" width="100"></td>
+                        <td>@item.Name</td>
                         <td>@item.Price</td>
-                        <td >@item.Quantuty </td>
+                        <td>@item.Quantuty </td>
 
                         <td class="button-column" style=" vertical-align: middle !important;">
 
@@ -52,7 +52,7 @@
                                 <i class="fas fa-pencil-alt"></i>&nbspშეცვლა
                             </a>
 
-                            <button type="button" id="delete-selected" class="btn btn-danger" data-toggle="modal" data-target="#delete-selected-action-confirmation" name="">
+                            <button type="button" class="btn btn-danger product-button" onclick="test('@item.Id')" id="@item.Id" data-toggle="modal" data-productID="@item.Id" data-productName="@item.Name" data-target="#delete-selected-action-confirmation" name="">
                                 <i class="far fa-trash-alt"></i>
                                 წაშლა
                             </button>
@@ -67,7 +67,29 @@
     </div>
 </div>
 
+<!-- Delete Modal -->
+<div class="modal fade" id="delete-selected-action-confirmation" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">მონაცემის წაშლა</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-delete-body" style="margin-left: 30px; ">
+                <p><span class="text-danger">ID: &nbsp;</span><span id="productIDp"></span></p>
+                <p><span class="text-danger">Name: &nbsp;</span><span id="productNamep"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">გაუქმება</button>
+                <button type="button" id="delete-selected" class="btn btn-danger">წაშლა</button>
+            </div>
+        </div>
+    </div>
+</div>
 
+<!--AddProduct-->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -78,103 +100,50 @@
                 </button>
             </div>
             <div class="modal-body">
-
-                <div class="form-group">
-                    <input class="form-control" id="Name" placeholder="პროდუქტის დასახელება" />
-                </div>
-
-
-                <div class="form-group">
-                    <input class="form-control" id="Price" placeholder="ფასი" />
-                </div>
+                <form  method="post"  enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input class="form-control" id="Name" placeholder="პროდუქტის დასახელება" />
+                    </div>
 
 
-                <div class="form-group">
-                    <input class="form-control" id="Quantuty" placeholder="რაოდენობა" />
-                </div>
+                    <div class="form-group">
+                        <input class="form-control" id="Price" placeholder="ფასი" />
+                    </div>
 
 
-                <div class="form-group">
-                    <input class="form-control" id="Description" placeholder="აღწერა" />
-                </div>
+                    <div class="form-group">
+                        <input class="form-control" id="Quantuty" placeholder="რაოდენობა" />
+                    </div>
 
-                <div class="form-group">
-                    <input class="form-control" id="Img" placeholder="სურათის ლინკი" />
-                </div>
 
-                <div class="form-group" id="Error" style="color:red;">
-                </div>
+                    <div class="form-group">
+                        <input class="form-control" id="Description" placeholder="აღწერა" />
+                    </div>
 
-                @*<div class="form-group">
-            <input class="form-control" type="file" id="Img" />
+                    @*<div class="form-group">
+                        <input class="form-control" id="Img" placeholder="სურათის ლინკი" />
+                    </div>*@
+                    <div class="form-group">
+                        <input type="file" multiple required class="form-control" id="ImgFile" placeholder="სურათის ლინკი" />
+                    </div>
+
+                    <div class="form-group" id="Error" style="color:red;">
+                    </div>
+
+                    @*<div class="form-group">
+        <input class="form-control" type="file" id="Img" />
         </div>*@
 
 
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">დახურვა</button>
                 <button type="button" id="save" data-dismiss="modal" class="btn btn-primary">შენახვა</button>
             </div>
+
         </div>
     </div>
 </div>
-
-<script>
-
-    $(document).ready(function () {
-
-        $(`#save`).click(function () {
-
-            var data = new FormData();
-            /*    var files = $("#Img").get(0).files;*/
-            var imgPath = $("#Img").val();
-            var name = $("#Name").val();
-            var price = $("#Price").val();
-            var quantuty = $("#Quantuty").val();
-            var description = $("#Description").val();
-
-            //if (files.lenght > 0) {
-            //    data.append("Img", files[0]);
-            //}
-
-            if (name.trim() == '' || price.trim() == '' || quantuty.trim() == '') {
-
-                $("#Error").html("შეავსე აუცილებელი ველები!!!")
-            } else {
-
-                data.append('Name', name);
-                data.append('Price', price);
-                data.append('Quantuty', quantuty);
-                data.append('Description', description);
-                data.append('Img', imgPath);
-
-                
-
-                var lastId = parseFloat($('table tr:last-child td:first-child').html())+1;
-
-
-
-
-                $.ajax({
-                    type: "POST",
-                    url: '@Url.Action("InsertProduct", "Product")',
-                    //url: 'Product/InsertProduct',
-                    //type: "POST",
-                    processData: false,
-                    contentType: false,
-                    data: data,
-                    success: function (response) {
-                        $('#productTable').append(`<tr><td>` + lastId + `</td><td><img src="` + imgPath + `" width="100"></td><td>` + name + `</td><td>` + price + `.00` + `</td><td>` + quantuty+`.00` + ` </td><td class="button-column" style="vertical-align:middle!important;"> <a class="btn btn-outline-dark"> <i class="fas fa-pencil-alt"></i>&nbspშეცვლა </a> <button type="buttonid="delete-selected" class="btn btn-danger" data-toggle="modal" data-target="#delete-selected-action-confirmation" > <i class="far fa-trash-alt"></i> წაშლა</button></td> </tr> `);
-                       
-                    },
-                    error: function (er) {
-                        alert(er);
-                    }
-
-                });
-            }
-
-        });
-    });
-
-</script>
+<script src="~/js/ProductCreate.js"></script>
+<script src="~/js/ProductDelete.js"></script>

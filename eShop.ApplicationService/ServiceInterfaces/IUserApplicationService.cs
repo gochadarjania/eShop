@@ -10,5 +10,6 @@ namespace eShop.ApplicationService.ServiceInterfaces
     public interface IUserApplicationService 
     {
         UserAuthResponceDTO Login(LoginDTO user);
+        void LoginOut(Guid sessionID);
     }
 }

@@ -13,4 +13,8 @@
     <ProjectReference Include="..\eShop.Utility\eShop.Utility.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\upload\" />
+  </ItemGroup>
+
 </Project>

@@ -9,7 +9,9 @@ namespace eShop.DomainService.ServiceInterfaces
 {
     public interface IProductDomainService
     {
-        List<ProductEntity> GetProductEntities();
+        Task<List<ProductEntity>> GetProductEntities();
         void InsertProduct(ProductEntity productEntity);
+        void DeleteProduct(int id);
+
     }
 }

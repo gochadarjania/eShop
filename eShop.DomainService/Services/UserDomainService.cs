@@ -42,5 +42,10 @@ namespace eShop.DomainService.Services
                 return validationResponse;
             }
         }
+
+        public void LoginOut(Guid sessionID)
+        {
+            _userRepository.LoginOut(sessionID);
+        }
     }
 }

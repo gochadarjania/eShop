@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -8,6 +11,7 @@
     <meta name="author" content="" />
     <title>Static Navigation - SB Admin</title>
     <link href="/css/styles.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="//cdn.web-fonts.ge/fonts/bpg-nino-mtavruli/css/bpg-nino-mtavruli.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -27,7 +31,7 @@
         <!-- Navbar-->
         <ul class="navbar-nav d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i><samp> @HttpContextAccessor.HttpContext.Session.GetString("UserName")</samp></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
 
                     <li><a class="dropdown-item" asp-controller="Auth" asp-action="LoginOut">Logout</a></li>
@@ -50,7 +54,7 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             მომხმარებლების მართვა
                         </a>
-                        <div class="sb-sidenav-menu-heading" >პროდუქტები</div>
+                        <div class="sb-sidenav-menu-heading">პროდუქტები</div>
                         <a class="nav-link" asp-controller="Product" asp-action="Product">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             პროდუქტები
@@ -62,7 +66,7 @@
 
                     </div>
                 </div>
-              
+
             </nav>
         </div>
         <div id="layoutSidenav_content">
@@ -75,7 +79,7 @@
                 <div class="container-fluid px-4">
                     <div class="d-flex align-items-center justify-content-between small">
                         <div class="text-muted">Copyright &copy; Your Website 2021</div>
-                      
+
                     </div>
                 </div>
             </footer>

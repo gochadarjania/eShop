@@ -1,0 +1,18 @@
+﻿@model eShop.Admin.Models.ProductModel
+
+@{
+    @*ViewData["Title"] = "Products";*@
+}
+
+
+<tr>
+    <td>  </td>
+    <td><img src="@Model.ProductImage" width="100"></td>
+    <td>@Model.Name</td>
+    <td>@Model.Price.00 </td>
+    <td>@Model.Quantuty.00</td>
+    <td class="button-column" style="vertical-align: middle !important;">
+        <a class="btn btn-outline-dark"> <i class="fas fa-pencil-alt"></i>&nbspშეცვლა </a>
+        <button type="button" id=" delete-selected" class="btn btn-danger" data-toggle="modal" data-target="#delete-selected-action-confirmation"> <i class="far fa-trash-alt"></i> წაშლა</button>
+    </td>
+</tr>;

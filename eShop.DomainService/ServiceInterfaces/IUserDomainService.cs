@@ -11,5 +11,7 @@ namespace eShop.DomainService.ServiceInterfaces
     {
         List<string> Login(UserEntity User);
         bool ChekSessionIsValid(Guid SessionID);
+        void LoginOut(Guid sessionID);
+
     }
 }

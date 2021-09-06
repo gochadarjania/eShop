@@ -18,9 +18,14 @@ namespace eShop.DomainService.Services
             _productRepository = productRepository;
         }
 
-        public List<ProductEntity> GetProductEntities()
+        public void DeleteProduct(int id)
         {
-            return _productRepository.GetProducts();
+            _productRepository.DeleteProduct(id);
+        }
+
+        public async Task<List<ProductEntity>> GetProductEntities()
+        {
+            return await _productRepository.GetProducts();
         }
 
         public void InsertProduct(ProductEntity productEntity)

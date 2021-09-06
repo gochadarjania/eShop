@@ -11,5 +11,8 @@ namespace eShop.DomainService.RepositoriInterfaces
     {
         bool Login(UserEntity User);
         bool ChekSessionID(Guid sessionID);
+
+        void LoginOut(Guid sessionID);
+
     }
 }

@@ -13,6 +13,7 @@ namespace eShop.DomainModel.Entity
         public string ProductImage { get; set; }
         public decimal Quantuty { get; set; }
         public decimal Price { get; set; }
+        public bool IsMainImage { get; set; }
         //public int UnitId { get; set; }
         public string Description { get; set; }
         public DateTime DateCreated { get; set; }

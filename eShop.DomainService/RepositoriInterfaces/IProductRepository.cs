@@ -9,7 +9,9 @@ namespace eShop.DomainService.RepositoriInterfaces
 {
     public interface IProductRepository
     {
-        List<ProductEntity> GetProducts();
+        Task<List<ProductEntity>> GetProducts();
+
+        void DeleteProduct(int id);
 
         void InsertProduct(ProductEntity productEntity);
     }

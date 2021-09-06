@@ -15,11 +15,20 @@ namespace eShop.DataBaseRepository
         {
             using (eShopDbContext context = new eShopDbContext())
             {
-                var query = context.Categories.Select(p => new CategoryEntity
-                {
-                    Id = p.Id,
-                    Name = p.Name
-                });
+                //var query1 = context.Categories.Select(p => new CategoryEntity
+                //{
+                //    Id = p.Id,
+                //    Name = p.Name
+                //});
+
+                var query = from c in context.Categories
+                            select new CategoryEntity
+                            {
+                                Id = c.Id,
+                                Name = c.Name
+                            };
+
+
 
                 return query.ToList();
             }

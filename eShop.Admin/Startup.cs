@@ -30,6 +30,7 @@ namespace eShop.Admin
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
             services.AddScoped<IUserApplicationService, UserApplicationService>();
             services.AddScoped<IUserDomainService, UserDomainService>();
             services.AddScoped<IUserRepository, UserRepository>();
@@ -41,6 +42,8 @@ namespace eShop.Admin
             services.AddScoped<ICategoryApplicationService, CategoryApplicationService>();
             services.AddScoped<ICategoryDomainService, CategoryDomainService>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+            services.AddHttpContextAccessor();
 
             services.AddSession(options =>
             {

@@ -32,5 +32,10 @@ namespace eShop.ApplicationService.Services
                 SessionID = userEntityModel.SessionId
             };
         }
+
+        public void LoginOut(Guid sessionID)
+        {
+            _userDomainService.LoginOut(sessionID);
+        }
     }
 }
